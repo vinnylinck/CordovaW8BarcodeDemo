@@ -1,0 +1,1 @@
+D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\CordovaApp.jsproj;neutral

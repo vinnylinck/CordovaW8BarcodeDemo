@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>TLANPA-NB06</Machine>
+    <WindowsUser>viniciusl</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <RegisteredManifestChecksum>4171D60B47EBC70A3BA81AD786420A375B25C6F6B85AEFA8D8DE82C2FAB07F16</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>com.linck.demo.barcode_0.0.1.0_neutral__dsh9t8a1qg3mw</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>com.linck.demo.barcode_dsh9t8a1qg3mw!com.linck.demo.barcode</RegisteredUserModeAppID>
+    <RegisteredPackageID>com.linck.demo.barcode</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Apache Cordova User</RegisteredPackagePublisher>
+    <RegisteredVersion>0.0.1.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-19T18:15:38.324</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\plugins\com.phonegap.plugins.barcodescanner\ZXing.winmd">
+      <PackagePath>ZXing.winmd</PackagePath>
+      <Modified>2014-03-19T18:15:10.054</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\images\logo.png">
+      <PackagePath>images\logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-11T11:30:20.281</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\images\smalllogo.png">
+      <PackagePath>images\smalllogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-11T11:30:20.283</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\images\splashscreen.png">
+      <PackagePath>images\splashscreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-11T11:30:20.286</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\images\storelogo.png">
+      <PackagePath>images\storelogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-03-11T11:30:20.288</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\www\img\logo.png">
+      <PackagePath>www\img\logo.png</PackagePath>
+      <Modified>2014-03-19T18:15:18.606</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\www\cordova.js">
+      <PackagePath>www\cordova.js</PackagePath>
+      <Modified>2014-03-19T18:15:18.621</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\www\cordova_plugins.js">
+      <PackagePath>www\cordova_plugins.js</PackagePath>
+      <Modified>2014-03-19T18:15:18.725</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\www\js\index.js">
+      <PackagePath>www\js\index.js</PackagePath>
+      <Modified>2014-03-19T18:15:18.610</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\www\js\stuff.js">
+      <PackagePath>www\js\stuff.js</PackagePath>
+      <Modified>2014-03-19T18:15:18.610</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\www\plugins\com.phonegap.plugins.barcodescanner\src\windows8\CameraHandler.js">
+      <PackagePath>www\plugins\com.phonegap.plugins.barcodescanner\src\windows8\CameraHandler.js</PackagePath>
+      <Modified>2014-03-19T18:15:18.723</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\www\plugins\com.phonegap.plugins.barcodescanner\src\windows8\ScannerProxy.js">
+      <PackagePath>www\plugins\com.phonegap.plugins.barcodescanner\src\windows8\ScannerProxy.js</PackagePath>
+      <Modified>2014-03-19T18:15:18.724</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\www\plugins\com.phonegap.plugins.barcodescanner\www\barcodescanner.js">
+      <PackagePath>www\plugins\com.phonegap.plugins.barcodescanner\www\barcodescanner.js</PackagePath>
+      <Modified>2014-03-19T18:15:18.722</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\www\css\index.css">
+      <PackagePath>www\css\index.css</PackagePath>
+      <Modified>2014-03-19T18:15:18.604</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\www\index.html">
+      <PackagePath>www\index.html</PackagePath>
+      <Modified>2014-03-19T18:15:18.608</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2014-03-19T18:15:38.121</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\Microsoft.WinJS.1.0\1.0\">
+      <Name>Microsoft.WinJS.1.0</Name>
+      <Version>1.0.9200.20789</Version>
+      <Architecture>Neutral</Architecture>
+      <FrameworkIdentity>Name=Microsoft.WinJS.1.0, MinVersion=1.0.9200.20789</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.0\ExtensionSDKs\Microsoft.WinJS.1.0\1.0\Microsoft.WinJS.1.0.appx</AppxLocation>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

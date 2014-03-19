@@ -1,0 +1,21 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "package.appxmanifest": {
+            "/Package/Capabilities": {
+                "<Capability Name=\"internetClient\" />": 1,
+                "<DeviceCapability Name=\"webcam\" />": 1,
+                "<DeviceCapability Name=\"microphone\" />": 1
+            }
+        }
+    },
+    "installed_plugins": {
+        "com.phonegap.plugins.barcodescanner": {
+            "PACKAGE_NAME": "HelloCordova"
+        }
+    },
+    "dependent_plugins": {}
+}
