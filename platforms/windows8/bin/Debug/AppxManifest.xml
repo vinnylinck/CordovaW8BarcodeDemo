@@ -40,34 +40,34 @@
     <Extension Category="windows.activatableClass.inProcessServer">
       <InProcessServer>
         <Path>CLRHost.dll</Path>
-        <ActivatableClass ActivatableClassId="ZXing.PDF417.PDF417ResultMetadata" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="ZXing.PDF417.PDF417EncodingOptions" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="ZXing.PDF417.PDF417Writer" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="ZXing.PDF417.Internal.Dimensions" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="ZXing.Result" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="ZXing.OneD.Code128EncodingOptions" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="ZXing.OneD.UPCAWriter" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="ZXing.Dimension" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="ZXing.Rendering.PixelDataRenderer" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="ZXing.BarcodeWriter" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="ZXing.ResultPoint" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="ZXing.Aztec.AztecWriter" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="ZXing.Aztec.AztecEncodingOptions" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="ZXing.Datamatrix.Encoder.DefaultPlacement" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="ZXing.Datamatrix.DataMatrixWriter" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="ZXing.Datamatrix.DatamatrixEncodingOptions" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="ZXing.Datamatrix.Encoder.DefaultPlacement" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="ZXing.Datamatrix.Internal.Version" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="ZXing.Common.BitArray" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="ZXing.Common.EncodingOptions" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="ZXing.Common.BitMatrix" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="ZXing.Common.DecodingOptions" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="ZXing.Common.Detector.WhiteRectangleDetector" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="ZXing.Common.BitSource" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="ZXing.Common.ReedSolomon.GenericGF" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="ZXing.ResultPoint" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="ZXing.BarcodeWriter" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="ZXing.Result" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="ZXing.PDF417.PDF417Writer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="ZXing.PDF417.PDF417EncodingOptions" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="ZXing.PDF417.PDF417ResultMetadata" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="ZXing.PDF417.Internal.Dimensions" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="ZXing.BarcodeReader" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="ZXing.QrCode.QrCodeEncodingOptions" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="ZXing.QrCode.QRCodeWriter" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="ZXing.QrCode.Internal.QRCodeDecoderMetaData" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="ZXing.BarcodeReader" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="ZXing.Common.BitSource" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="ZXing.Common.BitMatrix" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="ZXing.Common.BitArray" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="ZXing.Common.EncodingOptions" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="ZXing.Common.Detector.WhiteRectangleDetector" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="ZXing.Common.ReedSolomon.GenericGF" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="ZXing.Common.DecodingOptions" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="ZXing.Aztec.AztecWriter" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="ZXing.Aztec.AztecEncodingOptions" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="ZXing.Dimension" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="ZXing.Rendering.PixelDataRenderer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="ZXing.OneD.UPCAWriter" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="ZXing.OneD.Code128EncodingOptions" ThreadingModel="both" />
       </InProcessServer>
     </Extension>
   </Extensions>

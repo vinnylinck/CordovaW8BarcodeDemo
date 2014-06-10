@@ -3,4 +3,8 @@
   <PropertyGroup>
     <ReferenceCachePath>C:\Users\viniciusl\AppData\Local\Temp\hpo213vm_CordovaApp_refcache</ReferenceCachePath>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebuggerFlavor>AppHostRemoteDebugger</DebuggerFlavor>
+    <MachineName>lenovo-pc</MachineName>
+  </PropertyGroup>
 </Project>
