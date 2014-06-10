@@ -1,0 +1,14 @@
+images\logo.png
+images\smalllogo.png
+images\splashscreen.png
+images\storelogo.png
+www\cordova.js
+www\cordova_plugins.js
+www\css\index.css
+www\img\logo.png
+www\index.html
+www\js\index.js
+www\js\stuff.js
+www\plugins\com.phonegap.plugins.barcodescanner\src\windows8\CameraHandler.js
+www\plugins\com.phonegap.plugins.barcodescanner\src\windows8\ScannerProxy.js
+www\plugins\com.phonegap.plugins.barcodescanner\www\barcodescanner.js

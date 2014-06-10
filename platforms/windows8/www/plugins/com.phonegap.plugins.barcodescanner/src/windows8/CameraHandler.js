@@ -1,6 +1,4 @@
-cordova.define("com.phonegap.plugins.barcodescanner.CameraHandler", function(require, exports, module) { /*global exports, Windows, ZXing, require, console */
-
-/**
+cordova.define("com.phonegap.plugins.barcodescanner.CameraHandler", function(require, exports, module) { /**
  * cordova is available under *either* the terms of the modified BSD license *or* the
  * MIT License (2008). See http://opensource.org/licenses/alphabetical for full text.
  *
@@ -8,39 +6,52 @@ cordova.define("com.phonegap.plugins.barcodescanner.CameraHandler", function(req
  * Copyright (c) 2014, Tlantic
  */
 
-// Using
-    var Capture = Windows.Media.Capture,
-        previewPanel,
-        reader,
+    var
+        // barcode main objects
+        zxing,
         sampler,
-        stopped = true,
-        memoryBuffer,
-        hook;
+        element,
+
+        // application  references
+        isZxingInit = false,
+        isDomReady = false,
+        isVisible = false,
+        isCancelled = false,
+        raiseSuccess,
+        raiseError;
 
 
 
     // decoding barcode
     function readCode(decoder, pixels, format) {
         'use strict';
-        var result = reader.decode(pixels, decoder.pixelWidth, decoder.pixelHeight, format);
-        
+
+        console.log('- Decoding with ZXing...');
+
+        var result = zxing.decode(pixels, decoder.pixelWidth, decoder.pixelHeight, format);
+
         if (result) {
-            dispose();
-            hook(result);
+            console.log('- DECODED: ', result);
+            close(result);
+        } else if (isCancelled) {
+            console.log('- CANCELLED!');
+            close({cancelled : true});
         } else {
-            window.requestAnimationFrame(render);
+            render();
         }
     }
 
-    // decode bitmap stream
+    // decode pixel data
     function decodeBitmapStream(decoder, rawPixels) {
-        'use strict';
+        console.log('- Decoding bitmap stream...');
+
         var pixels, format, pixelBuffer_U8;
 
         switch (decoder.bitmapPixelFormat) {
 
             // RGBA 16
             case Windows.Graphics.Imaging.BitmapPixelFormat.rgba16:
+                console.log('- RGBA16 detected...');
 
                 // allocate a typed array with the raw pixel data
                 pixelBuffer_U8 = new Uint8Array(rawPixels);
@@ -54,6 +65,8 @@ cordova.define("com.phonegap.plugins.barcodescanner.CameraHandler", function(req
 
                 // RGBA 8
             case Windows.Graphics.Imaging.BitmapPixelFormat.rgba8:
+                console.log('- RGBA8 detected...');
+
                 // for 8 bit pixel, formats, just use returned pixel array.
                 pixels = rawPixels;
 
@@ -63,6 +76,8 @@ cordova.define("com.phonegap.plugins.barcodescanner.CameraHandler", function(req
 
                 // BGRA 8
             case Windows.Graphics.Imaging.BitmapPixelFormat.bgra8:
+                console.log('- BGRA8 detected...');
+
                 // basically, this is still 8 bits...
                 pixels = rawPixels;
 
@@ -74,104 +89,144 @@ cordova.define("com.phonegap.plugins.barcodescanner.CameraHandler", function(req
         readCode(decoder, pixels, format);
     }
 
-    // load stream creating a decoder
-    function loadStream() {
-        'use strict';
-        Windows.Graphics.Imaging.BitmapDecoder.createAsync(memoryBuffer).done(function onDone(decoder) {
+    // loads data stream
+    function loadStream(buffer) {
+        console.log('- Loading stream...');
+
+        Windows.Graphics.Imaging.BitmapDecoder.createAsync(buffer).done(function (decoder) {
+            console.log('- Stream has been loaded!');
+
             if (decoder) {
+                console.log('- Decoding data...');
+
                 decoder.getPixelDataAsync().then(
 
                     function onSuccess(pixelDataProvider) {
+                        console.log('- Detaching pixel data...');
                         decodeBitmapStream(decoder, pixelDataProvider.detachPixelData());
-                    },
-
-                    function onError(e) {
-                        throw e;
-                    }
-
-                );
+                    }, raiseError);
             } else {
-                throw new Error('Unable to load camera image');
+                raiseError (new Error('Unable to load camera image'));
             }
-        });
+
+        }, raiseError);
     }
 
-    // gets current preview image frame
-   function flick() {
-    'use strict';
-       var photoProperties = Windows.Media.MediaProperties.ImageEncodingProperties.createJpeg();
-            memoryBuffer = new Windows.Storage.Streams.InMemoryRandomAccessStream();
 
-        sampler.capturePhotoToStreamAsync(photoProperties, memoryBuffer).done(loadStream);
-    }
-
-    // triggers camera image gathering process
+    // renders image
     function render() {
-        'use strict';
-        if (!stopped) {
-            flick();
+        console.log('- Sampling...');
+
+        var frame, canvas = document.createElement('canvas');
+
+        canvas.width = element.videoWidth;
+        canvas.height = element.videoHeight;
+        canvas.getContext('2d').drawImage(element, 0, 0, canvas.width, canvas.height);
+
+        frame = canvas.msToBlob().msDetachStream();
+        loadStream(frame);
+    }
+
+    // initialize ZXing
+    function initZXing() {
+        console.log('- Creating ZXing instance...');
+
+        if (!isZxingInit) {
+            console.log('- ZXing instance has been created!');
+
+            isZxingInit = true;
+            zxing = new ZXing.BarcodeReader();
+        } else {
+            console.log('- ZXing instance has been recovered!');
         }
     }
 
-    // dispose camera element
-    function dispose() {
-        'use strict';
-        previewPanel.style.display = 'none';
-        previewPanel.pause();
-        previewPanel.src = '';
-        stopped = true;
+    // initialize MediaCapture
+    function initSampler() {
+        console.log('- Initializing MediaCapture...'); 
+        sampler = new Windows.Media.Capture.MediaCapture();
+        return sampler.initializeAsync();
+    }
+
+    // initializes dom element
+    function createCameraElement() {
+        console.log('- Creating DOM element...');
+
+        if (!isDomReady) {
+            isDomReady = true;
+            element = document.createElement('video');
+
+            element.style.display = 'none';
+            element.style.position = 'absolute';
+            element.style.left = '0px';
+            element.style.top = '0px';
+            element.style.zIndex = 2e9;
+            element.style.width = '100%';
+            element.style.height = '100%';
+
+            element.onclick = cancel;
+
+            document.body.appendChild(element);
+            console.log('- Camera element has been created!');
+
+        } else {
+            console.log('- DOM is ready!');
+        }
     }
 
 
-    exports.stop = function () {
-        'use strict';
-        dispose();
-        hook({ cancelled: true });
+    // cancel rendering
+    function cancel() {
+        isCancelled = true;
+    }
+
+    // close panel
+    function close(result) {
+        element.style.display = 'none';
+        element.pause();
+        element.src = '';
+        isVisible = false;
+        element.parentNode.removeChild(element);
+        isDomReady = false;
+        raiseSuccess(result);
+    }
+
+    // show camera panel
+    function showPanel() {
+        if (!isVisible) {
+            isCancelled = false;
+            isVisible = true;
+            element.style.display = 'block';
+            element.src = URL.createObjectURL(sampler);
+            element.play();
+        }
+    }
+
+    // starting camera
+    exports.start = function (win, fail) {
+        console.log('- Starting camera device...');
+
+        // saving references
+        raiseSuccess = win;
+        raiseError = fail;
+
+        // init objects
+        initZXing();
+
+        initSampler().done(function () {
+            console.log('- MediaCapture has been initialized successfully!');
+
+            // preparing to show camera preview
+            createCameraElement();
+            showPanel();
+
+            setTimeout(render, 100);
+        }, raiseError);
+
     };
 
-    exports.start = function (callback) {
-        'use strict';
-        hook = callback;
-        previewPanel.style.display = 'block';
-    previewPanel.src = URL.createObjectURL(sampler);
-    previewPanel.play();
-    stopped = false;
-    render();
-};
- 
-exports.createCameraElm = function () {
-	'use strict';
-
-	console.log('Creating camera element...');
-
-	var elm = document.createElement('video');
-	
-	elm.style.display = 'none';
-	elm.style.position = 'absolute';
-	elm.style.left = '0px';
-	elm.style.top = '0px';
-	elm.style.zIndex = 2e9;
-	elm.style.width = '100%';
-	elm.style.height = '100%';
-
-	elm.onclick = this.stop;
-
-	return elm;
-};
-
-exports.initCamera = function () {
-	'use strict';
-	console.log('Configuring image sampler...');
-
-	// preparing camera preview
-	reader = new ZXing.BarcodeReader();
-	sampler = new Capture.MediaCapture();
-	sampler.initializeAsync();
-
-	// adding preview element into DOM tree
-	previewPanel = this.createCameraElm();
-	document.body.appendChild(previewPanel);
-};
 
  require('cordova/windows8/commandProxy').add('CameraHandler', exports);
+
+
 });

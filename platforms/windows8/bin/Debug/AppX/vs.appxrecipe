@@ -5,7 +5,7 @@
     <WindowsUser>viniciusl</WindowsUser>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
-    <RegisteredManifestChecksum>4171D60B47EBC70A3BA81AD786420A375B25C6F6B85AEFA8D8DE82C2FAB07F16</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>D0D50FE5040F9C98AF55A56519D8332DDCAAD59BBE9E612FF27A892BC3B5DDD0</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>com.linck.demo.barcode_0.0.1.0_neutral__dsh9t8a1qg3mw</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>com.linck.demo.barcode_dsh9t8a1qg3mw!com.linck.demo.barcode</RegisteredUserModeAppID>
     <RegisteredPackageID>com.linck.demo.barcode</RegisteredPackageID>
@@ -13,80 +13,80 @@
     <RegisteredVersion>0.0.1.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="D:\github\vlinck\CordovaW8BarcodeDemo\platforms\windows8\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-03-19T18:15:38.324</Modified>
+      <Modified>2014-06-10T12:33:09.697</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\plugins\com.phonegap.plugins.barcodescanner\ZXing.winmd">
+    <AppxPackagedFile Include="D:\github\vlinck\CordovaW8BarcodeDemo\platforms\windows8\plugins\com.phonegap.plugins.barcodescanner\ZXing.winmd">
       <PackagePath>ZXing.winmd</PackagePath>
-      <Modified>2014-03-19T18:15:10.054</Modified>
+      <Modified>2014-06-09T16:15:00.026</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\images\logo.png">
+    <AppxPackagedFile Include="D:\github\vlinck\CordovaW8BarcodeDemo\platforms\windows8\images\logo.png">
       <PackagePath>images\logo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-03-11T11:30:20.281</Modified>
+      <Modified>2014-06-09T16:14:59.990</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\images\smalllogo.png">
+    <AppxPackagedFile Include="D:\github\vlinck\CordovaW8BarcodeDemo\platforms\windows8\images\smalllogo.png">
       <PackagePath>images\smalllogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-03-11T11:30:20.283</Modified>
+      <Modified>2014-06-09T16:14:59.991</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\images\splashscreen.png">
+    <AppxPackagedFile Include="D:\github\vlinck\CordovaW8BarcodeDemo\platforms\windows8\images\splashscreen.png">
       <PackagePath>images\splashscreen.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-03-11T11:30:20.286</Modified>
+      <Modified>2014-06-09T16:14:59.992</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\images\storelogo.png">
+    <AppxPackagedFile Include="D:\github\vlinck\CordovaW8BarcodeDemo\platforms\windows8\images\storelogo.png">
       <PackagePath>images\storelogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-03-11T11:30:20.288</Modified>
+      <Modified>2014-06-09T16:14:59.993</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\www\img\logo.png">
+    <AppxPackagedFile Include="D:\github\vlinck\CordovaW8BarcodeDemo\platforms\windows8\www\img\logo.png">
       <PackagePath>www\img\logo.png</PackagePath>
-      <Modified>2014-03-19T18:15:18.606</Modified>
+      <Modified>2014-06-09T16:15:00.042</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\www\cordova.js">
+    <AppxPackagedFile Include="D:\github\vlinck\CordovaW8BarcodeDemo\platforms\windows8\www\cordova.js">
       <PackagePath>www\cordova.js</PackagePath>
-      <Modified>2014-03-19T18:15:18.621</Modified>
+      <Modified>2014-06-09T16:15:00.039</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\www\cordova_plugins.js">
+    <AppxPackagedFile Include="D:\github\vlinck\CordovaW8BarcodeDemo\platforms\windows8\www\cordova_plugins.js">
       <PackagePath>www\cordova_plugins.js</PackagePath>
-      <Modified>2014-03-19T18:15:18.725</Modified>
+      <Modified>2014-06-09T16:15:00.040</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\www\js\index.js">
+    <AppxPackagedFile Include="D:\github\vlinck\CordovaW8BarcodeDemo\platforms\windows8\www\js\index.js">
       <PackagePath>www\js\index.js</PackagePath>
-      <Modified>2014-03-19T18:15:18.610</Modified>
+      <Modified>2014-06-09T16:15:00.043</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\www\js\stuff.js">
+    <AppxPackagedFile Include="D:\github\vlinck\CordovaW8BarcodeDemo\platforms\windows8\www\js\stuff.js">
       <PackagePath>www\js\stuff.js</PackagePath>
-      <Modified>2014-03-19T18:15:18.610</Modified>
+      <Modified>2014-06-09T16:15:00.043</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\www\plugins\com.phonegap.plugins.barcodescanner\src\windows8\CameraHandler.js">
+    <AppxPackagedFile Include="D:\github\vlinck\CordovaW8BarcodeDemo\platforms\windows8\www\plugins\com.phonegap.plugins.barcodescanner\src\windows8\CameraHandler.js">
       <PackagePath>www\plugins\com.phonegap.plugins.barcodescanner\src\windows8\CameraHandler.js</PackagePath>
-      <Modified>2014-03-19T18:15:18.723</Modified>
+      <Modified>2014-06-09T16:15:00.045</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\www\plugins\com.phonegap.plugins.barcodescanner\src\windows8\ScannerProxy.js">
+    <AppxPackagedFile Include="D:\github\vlinck\CordovaW8BarcodeDemo\platforms\windows8\www\plugins\com.phonegap.plugins.barcodescanner\src\windows8\ScannerProxy.js">
       <PackagePath>www\plugins\com.phonegap.plugins.barcodescanner\src\windows8\ScannerProxy.js</PackagePath>
-      <Modified>2014-03-19T18:15:18.724</Modified>
+      <Modified>2014-06-09T16:15:00.046</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\www\plugins\com.phonegap.plugins.barcodescanner\www\barcodescanner.js">
+    <AppxPackagedFile Include="D:\github\vlinck\CordovaW8BarcodeDemo\platforms\windows8\www\plugins\com.phonegap.plugins.barcodescanner\www\barcodescanner.js">
       <PackagePath>www\plugins\com.phonegap.plugins.barcodescanner\www\barcodescanner.js</PackagePath>
-      <Modified>2014-03-19T18:15:18.722</Modified>
+      <Modified>2014-06-09T16:15:00.047</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\www\css\index.css">
+    <AppxPackagedFile Include="D:\github\vlinck\CordovaW8BarcodeDemo\platforms\windows8\www\css\index.css">
       <PackagePath>www\css\index.css</PackagePath>
-      <Modified>2014-03-19T18:15:18.604</Modified>
+      <Modified>2014-06-09T16:15:00.041</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\www\index.html">
+    <AppxPackagedFile Include="D:\github\vlinck\CordovaW8BarcodeDemo\platforms\windows8\www\index.html">
       <PackagePath>www\index.html</PackagePath>
-      <Modified>2014-03-19T18:15:18.608</Modified>
+      <Modified>2014-06-10T12:51:42.242</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="D:\github\vlinck\CordovaW8BarcodeDemo\platforms\windows8\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-03-19T18:15:38.121</Modified>
+      <Modified>2014-06-09T16:21:41.206</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

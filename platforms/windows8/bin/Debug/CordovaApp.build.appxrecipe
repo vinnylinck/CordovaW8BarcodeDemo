@@ -7,62 +7,62 @@
     <PackageArchitecture>neutral</PackageArchitecture>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="D:\github\vlinck\CordovaW8BarcodeDemo\platforms\windows8\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\plugins\com.phonegap.plugins.barcodescanner\ZXing.winmd">
+    <AppxPackagedFile Include="D:\github\vlinck\CordovaW8BarcodeDemo\platforms\windows8\plugins\com.phonegap.plugins.barcodescanner\ZXing.winmd">
       <PackagePath>ZXing.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\images\logo.png">
+    <AppxPackagedFile Include="D:\github\vlinck\CordovaW8BarcodeDemo\platforms\windows8\images\logo.png">
       <PackagePath>images\logo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\images\smalllogo.png">
+    <AppxPackagedFile Include="D:\github\vlinck\CordovaW8BarcodeDemo\platforms\windows8\images\smalllogo.png">
       <PackagePath>images\smalllogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\images\splashscreen.png">
+    <AppxPackagedFile Include="D:\github\vlinck\CordovaW8BarcodeDemo\platforms\windows8\images\splashscreen.png">
       <PackagePath>images\splashscreen.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\images\storelogo.png">
+    <AppxPackagedFile Include="D:\github\vlinck\CordovaW8BarcodeDemo\platforms\windows8\images\storelogo.png">
       <PackagePath>images\storelogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\www\img\logo.png">
+    <AppxPackagedFile Include="D:\github\vlinck\CordovaW8BarcodeDemo\platforms\windows8\www\img\logo.png">
       <PackagePath>www\img\logo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\www\cordova.js">
+    <AppxPackagedFile Include="D:\github\vlinck\CordovaW8BarcodeDemo\platforms\windows8\www\cordova.js">
       <PackagePath>www\cordova.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\www\cordova_plugins.js">
+    <AppxPackagedFile Include="D:\github\vlinck\CordovaW8BarcodeDemo\platforms\windows8\www\cordova_plugins.js">
       <PackagePath>www\cordova_plugins.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\www\js\index.js">
+    <AppxPackagedFile Include="D:\github\vlinck\CordovaW8BarcodeDemo\platforms\windows8\www\js\index.js">
       <PackagePath>www\js\index.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\www\js\stuff.js">
+    <AppxPackagedFile Include="D:\github\vlinck\CordovaW8BarcodeDemo\platforms\windows8\www\js\stuff.js">
       <PackagePath>www\js\stuff.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\www\plugins\com.phonegap.plugins.barcodescanner\src\windows8\CameraHandler.js">
+    <AppxPackagedFile Include="D:\github\vlinck\CordovaW8BarcodeDemo\platforms\windows8\www\plugins\com.phonegap.plugins.barcodescanner\src\windows8\CameraHandler.js">
       <PackagePath>www\plugins\com.phonegap.plugins.barcodescanner\src\windows8\CameraHandler.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\www\plugins\com.phonegap.plugins.barcodescanner\src\windows8\ScannerProxy.js">
+    <AppxPackagedFile Include="D:\github\vlinck\CordovaW8BarcodeDemo\platforms\windows8\www\plugins\com.phonegap.plugins.barcodescanner\src\windows8\ScannerProxy.js">
       <PackagePath>www\plugins\com.phonegap.plugins.barcodescanner\src\windows8\ScannerProxy.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\www\plugins\com.phonegap.plugins.barcodescanner\www\barcodescanner.js">
+    <AppxPackagedFile Include="D:\github\vlinck\CordovaW8BarcodeDemo\platforms\windows8\www\plugins\com.phonegap.plugins.barcodescanner\www\barcodescanner.js">
       <PackagePath>www\plugins\com.phonegap.plugins.barcodescanner\www\barcodescanner.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\www\css\index.css">
+    <AppxPackagedFile Include="D:\github\vlinck\CordovaW8BarcodeDemo\platforms\windows8\www\css\index.css">
       <PackagePath>www\css\index.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\www\index.html">
+    <AppxPackagedFile Include="D:\github\vlinck\CordovaW8BarcodeDemo\platforms\windows8\www\index.html">
       <PackagePath>www\index.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="D:\github\vlinck\CordovaW8BarcodeDemo\platforms\windows8\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
