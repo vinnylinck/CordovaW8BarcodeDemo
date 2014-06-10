@@ -6,24 +6,14 @@
  * Copyright (c) Vinicius Linck 2014
  * Copyright (c) 2014, Tlantic
  */
- 
-var scanner = require('com.phonegap.plugins.barcodescanner.CameraHandler'),
-	initialized = false;
-
-try {
-	scanner.initCamera();
-	initialized = true;
-} catch (e) {
-	console.log('Failure initializing camre device: ', e);
-}
-
+    var scanner = require('com.phonegap.plugins.barcodescanner.CameraHandler');
 
  module.exports = {
 	scan:function(win, fail) {
 		'use strict';
 
 	    try {
-	        scanner.start(win);
+	        scanner.start(win, fail);
 		} catch(e) {
 			fail(e);
 		}

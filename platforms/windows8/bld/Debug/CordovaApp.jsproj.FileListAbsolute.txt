@@ -12,8 +12,6 @@ D:\github\vinnylinck\w8PGBarcodeDemo\platforms\windows8\bld\Debug\CordovaApp.jsp
 D:\github\vlinck\CordovaW8BarcodeDemo\platforms\windows8\bin\Debug\resources.pri
 D:\github\vlinck\CordovaW8BarcodeDemo\platforms\windows8\bin\Debug\AppxManifest.xml
 D:\github\vlinck\CordovaW8BarcodeDemo\platforms\windows8\bin\Debug\CordovaApp.build.appxrecipe
-D:\github\vlinck\CordovaW8BarcodeDemo\platforms\windows8\bin\Debug\ZXing.winmd
-D:\github\vlinck\CordovaW8BarcodeDemo\platforms\windows8\bld\Debug\CordovaApp.jsprojResolveAssemblyReference.cache
 D:\github\vlinck\CordovaW8BarcodeDemo\platforms\windows8\bld\Debug\priconfig.xml
 D:\github\vlinck\CordovaW8BarcodeDemo\platforms\windows8\bld\Debug\layout.resfiles
 D:\github\vlinck\CordovaW8BarcodeDemo\platforms\windows8\bld\Debug\resources.resfiles
@@ -24,3 +22,5 @@ D:\github\vlinck\CordovaW8BarcodeDemo\platforms\windows8\bld\Debug\priconfig.xml
 D:\github\vlinck\CordovaW8BarcodeDemo\platforms\windows8\bld\Debug\layout.resfiles.intermediate
 D:\github\vlinck\CordovaW8BarcodeDemo\platforms\windows8\bld\Debug\resources.resfiles.intermediate
 D:\github\vlinck\CordovaW8BarcodeDemo\platforms\windows8\bld\Debug\pri.resfiles.intermediate
+D:\github\vlinck\CordovaW8BarcodeDemo\platforms\windows8\bin\Debug\ZXing.winmd
+D:\github\vlinck\CordovaW8BarcodeDemo\platforms\windows8\bld\Debug\CordovaApp.jsprojResolveAssemblyReference.cache
